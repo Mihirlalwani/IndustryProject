@@ -20,7 +20,7 @@ function runTask(e){
      }
      for(let i=0;i<outlet.length;i++){
     var outletPipe=document.querySelector(".outlet"+outlet[i]);
-    outletPipe.setAttribute('src',"/images/"+solvent.value+"Pipe.png");
+    outletPipe.setAttribute('src',"images/"+solvent.value+"Pipe.png");
      }
   
 }
