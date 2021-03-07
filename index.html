@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pannel</title>
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="row">
+       <!-- First Big Card ,All Images Come Here-->
+       <div class="col s6 card card-left offset-s1">
+         <div class="row">
+           <div class="container top col offset-s3">
+             <img src="images/yellowPipe.png" id="yellow" class="col s1 pipe " alt="Solvent A">
+             <img src="images/redPipe.png" id="red" class="col s1 pipe offset-s1" alt="Solvent B"> 
+             <img src="images/greenPipe.png" id="green" class="col s1 pipe offset-s1" alt="Solvent C"> 
+             <img src="images/bluePipe.png" id="blue" class="col s1 pipe offset-s1" alt="Solvent D">   
+
+            </div>
+            <div class="container middle ">
+                <img src="images/metalplate1.png" class="col s12 pannel" alt="Pannel">
+            </div>
+            <div class="container bottom col offset-s3">
+                <img src="images/pipe.png" class="col s1 outlet1" alt="outlet">
+                <img src="images/pipe.png" class="col s1 outlet2" alt="outlet">
+                <img src="images/pipe.png" class="col s1 outlet3" alt="outlet">
+                <img src="images/pipe.png" class="col s1 outlet4" alt="outlet">
+                <img src="images/pipe.png" class="col s1 outlet5" alt="outlet">
+                <img src="images/pipe.png" class="col s1 outlet6" alt="outlet">
+                <img src="images/pipe.png" class="col s1 outlet7" alt="outlet">
+                <img src="images/pipe.png" class="col s1 outlet8" alt="outlet">                
+            </div>
+        </div>
+
+       </div>
+       <!-- Second Big Card , Control Pannel Form-->
+       <div class="col s4 card card-right">
+           <span><h5>Control</h5></span>
+        <div class="row">
+           <form id="form">            
+            <div class="input-field col s10 " >
+                <select class="icons solvent">
+                  <option value="" disabled selected>Choose the Solvent</option>
+                  <option value="yellow" data-icon="images/yellowPipe.png">Solvent A</option>
+                  <option value="red" data-icon="images/redPipe.png">Solvent B</option>
+                  <option value="green" data-icon="images/greenPipe.png">Solvent C</option>
+                  <option value="blue" data-icon="images/bluePipe.png">Solvent D</option>
+                </select>
+                <label>Solvent</label>
+            </div> 
+            <!-- Multiple select dropdown for outlet -->
+            <div class="input-field col s10">
+                <select multiple id="outlet-option">
+                  <option value="" disabled >Choose outlet options </option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                  <option value="5">Option 5</option>
+                  <option value="6">Option 6</option>
+                  <option value="7">Option 7</option>
+                  <option value="8">Option 8</option>
+                </select>
+                <label>Outlet</label>
+              </div>           
+            <div class="col s12"> 
+            <input type="submit" class="btn run grey col s4" value="Run">
+            <button class="btn col s4 offset-s1" id="reset">Reset</button>
+        </div>
+           </form>
+        </div>
+    </div>
+   </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
