@@ -3,8 +3,45 @@
     width: 1rem;
     padding: 100px;
 }
-.top{
-    align-items: center;
+#top{
+    margin-top: 1%;
+   padding-left: 5%;
+}
+#bottom{
+    padding-left: 9%;
+}
+.a{
+    position:absolute;
+    padding-top: 20%;
+    padding-left: 27.5%;
+}
+.b{
+    position:absolute;
+    padding-top: 19%;
+    padding-left:20% ;
+}
+.c{
+    padding-top: 19%;
+    position:absolute;
+    padding-left: 34.5%;
+}
+.d{
+    padding-top: 19%;
+    position:absolute;
+    padding-left: 48.3%;
+}
+.p1{position:fixed;padding-left:1% ;}
+.p2{position:fixed;padding-left: 4%;}
+.p3{position:fixed;padding-left: 7%;}
+.p4{position:fixed;padding-left: 10%;}
+.p5{position:fixed;padding-left: 13%;}
+.p6{position:fixed;padding-left: 16%;}
+.p7{position:fixed;padding-left: 19%;}
+.p8{position:fixed;padding-left: 22%;}
+.mdu{
+    position: absolute;
+    padding-left:30% ;
+    padding-top: 37%;
 }
 .card-left{
     margin: 2%;
