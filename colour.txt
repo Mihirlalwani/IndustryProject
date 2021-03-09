@@ -1,0 +1,6 @@
+1. 5 inch LCD Touch Screen Display with HDMI for Raspberry Pi
+2. 3.2 Inch TFT LCD Touch Screen Display V4.0 for Raspberry Pi
+RED-f00000;
+GREEN-1cf000;
+BLUE-000bf0;
+Yellow-f0ed00;
