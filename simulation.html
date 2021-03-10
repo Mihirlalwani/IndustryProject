@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pannel</title>
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="row">
+       <!-- First Big Card ,All Images Come Here-->
+       <div class="col s6 card card-left offset-s1">
+         <div class="row">
+             <h5 class="a">A</h5>
+           <div id="top" class="container top col s12 m9 offset-m2">
+            
+             <img src="images/pumpTopYellow.png" id="yellow" class="col s3 m2 pipe" alt="Solvent A">
+             <h5 class="b">B</h5>             
+             <img src="images/pumpTopRed.png" id="red" class="col s3 m2 pipe " alt="Solvent B">
+             <h5 class="c">C</h5> 
+             <img src="images/pumpTopGreen.png" id="green" class="col s3 m2 pipe " alt="Solvent C">
+             <h5 class="d">D</h5>
+             <img src="images/pumpTopBlue.png" id="blue" class="col s3 m2 pipe " alt="Solvent D">    
+                 
+            </div>
+            <div id="middle" class="container  ">
+                <img src="images/metalplate1.jpg" class="col s12 m12 pannel" alt="Pannel">
+                <h5 class="mdu">M D U</h5>
+            </div>
+            <div id="bottom" class="container bottom col s10 m10 offset-s3 offset-m2 ">
+                <h5 class="p1">1</h5><img src="images/pipe.png" class="col s1 m1 outlet1 opipe" alt="outlet">
+                <h5 class="p2">2</h5><img src="images/pipe.png" class="col s1 m1 outlet2 opipe" alt="outlet">
+                <h5 class="p3">3</h5><img src="images/pipe.png" class="col s1 m1 outlet3 opipe" alt="outlet">
+                <h5 class="p4">4</h5> <img src="images/pipe.png" class="col s1 m1 outlet4 opipe" alt="outlet">
+                <h5 class="p5">5</h5><img src="images/pipe.png" class="col s1 m1 outlet5 opipe" alt="outlet">
+                <h5 class="p6">6</h5><img src="images/pipe.png" class="col s1 m1 outlet6 opipe" alt="outlet">
+                <h5 class="p7">7</h5><img src="images/pipe.png" class="col s1 m1 outlet7 opipe" alt="outlet">
+                <h5 class="p8">8</h5> <img src="images/pipe.png" class="col s1 m1 outlet8 opipe" alt="outlet">                
+            </div>
+        </div>
+
+       </div>
+       <!-- Second Big Card , Control Pannel Form-->
+       <div class="col s4 card card-right">
+           <span><h5>Control Pannel</h5></span>
+        <div class="row">
+                      
+            <!-- <div class="input-field col s10 " >
+                <select class="icons solvent">
+                  <option value="" disabled selected>Choose the Solvent</option>
+                  <option value="yellow" data-icon="images/topyellowPipe.png">Solvent A</option>
+                  <option value="red" data-icon="images/topredPipe.png">Solvent B</option>
+                  <option value="green" data-icon="images/topgreenPipe.png">Solvent C</option>
+                  <option value="blue" data-icon="images/topbluePipe.png">Solvent D</option>
+                </select>
+                <label>Solvent</label>
+            </div>  -->
+            <!-- Multiple select dropdown for outlet -->
+            <div class="input-field col s7">
+                <select id="outletA" onchange="changeA()">
+                  <option value="" disabled selected>Outlet</option>
+                  <option value="1">Outlet 1</option>
+                  <option value="2">Outlet 2</option>
+                  <option value="3">Outlet 3</option>
+                  <option value="4">Outlet 4</option>
+                  <option value="5">Outlet 5</option>
+                  <option value="6">Outlet 6</option>
+                  <option value="7">Outlet 7</option>
+                  <option value="8">Outlet 8</option>
+                </select>
+                <label>Solvent A</label>
+              </div>
+              <input type="number" class="col s1" id="secondsA" placeholder="Qty">
+              <div class="col s1 counterA">0</div>
+              <button class="btn col s2 grey btnA" id="btnA">Run</button>
+              <button class="btn col s2  red stop" id="stopA">Stop</button>
+              
+              
+              <div class="input-field col s7 ">
+                <select id="outletB" onchange="changeB()">
+                  <option value="" disabled selected>Outlet</option>
+                  <option value="1">Outlet 1</option>
+                  <option value="2">Outlet 2</option>
+                  <option value="3">Outlet 3</option>
+                  <option value="4">Outlet 4</option>
+                  <option value="5">Outlet 5</option>
+                  <option value="6">Outlet 6</option>
+                  <option value="7">Outlet 7</option>
+                  <option value="8">Outlet 8</option>
+                </select>
+                <label>Solvent B</label>
+              </div>              
+              <input type="number" class="col s1" id="secondsB" placeholder="Qty">
+              <div class="col s1 counterB">0</div>
+              <button class="btn col s2 grey btnB" id="btnB">Run</button>
+              <button class="btn col s2 red stop" id="stopB">Stop</button>
+              
+              <div class="input-field col s7">
+                <select id="outletC" onchange="changeC()">
+                  <option value="" disabled selected>Outlet</option>
+                  <option value="1">Outlet 1</option>
+                  <option value="2">Outlet 2</option>
+                  <option value="3">Outlet 3</option>
+                  <option value="4">Outlet 4</option>
+                  <option value="5">Outlet 5</option>
+                  <option value="6">Outlet 6</option>
+                  <option value="7">Outlet 7</option>
+                  <option value="8">Outlet 8</option>
+                </select>
+                <label>Solvent C</label>
+              </div> 
+              <input type="number" class="col s1" id="secondsC" placeholder="Qty">
+              <div class="col s1 counterC">0</div>
+              <button class="btn col s2  grey btnC" id="btnC">Run</button>
+              <button class="btn col s2  red  stop" id="stopC">Stop</button>
+
+              <div class="input-field col s7">
+                <select id="outletD" onchange="changeD()">
+                  <option value="" disabled selected>Outlet</option>
+                  <option value="1">Outlet 1</option>
+                  <option value="2">Outlet 2</option>
+                  <option value="3">Outlet 3</option>
+                  <option value="4">Outlet 4</option>
+                  <option value="5">Outlet 5</option>
+                  <option value="6">Outlet 6</option>
+                  <option value="7">Outlet 7</option>
+                  <option value="8">Outlet 8</option>
+                </select>
+                <label>Solvent D</label>
+              </div>              
+              <input type="number" class="col s1" id="secondsD" placeholder="Qty"> 
+              <div class="col s1 counterD">0</div>
+              <button class="btn col s2 grey btnD" id="btnD">Run</button>
+              <button class="btn col s2 red stop" id="stopD">Stop</button> 
+              
+            <div class="col s12"> 
+            
+            <button class="btn col s4 offset-s4" id="reset">Reset</button>
+        </div>
+           
+        </div>
+    </div>
+   </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
