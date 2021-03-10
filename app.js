@@ -174,6 +174,7 @@ function stopAflow(){
   //remSecondsA=Number(timerA.value)+2;
   clearInterval(A);
   counterA.innerHTML=0;
+  remSecondsA=1;
   timerA.value="";
   
 }
@@ -185,6 +186,7 @@ function stopBflow(){
   outletB.setAttribute('src',"images/pipe.png");
   clearInterval(B);
   counterB.innerHTML=0;
+  remSecondsB=1;
   timerB.value="";
 }
 function stopCflow(){
@@ -195,6 +197,7 @@ function stopCflow(){
   outletC.setAttribute('src',"images/pipe.png");
   clearInterval(C);
      counterC.innerHTML=0;
+     remSecondsC=1;
   timerC.value="";
 }
 function stopDflow(){
@@ -205,6 +208,7 @@ function stopDflow(){
   outletD.setAttribute('src',"images/pipe.png");
   clearInterval(D);
   counterD.innerHTML=0;
+  remSecondsD=1;
   timerD.value="";
 }
 
