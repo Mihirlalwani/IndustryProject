@@ -19,13 +19,13 @@
              <h5 class="a">A</h5>
            <div id="top" class="container top col s12 m9 offset-m2">
             
-             <img src="images/topyellow.png" id="yellow" class="col s3 m2 pipe" alt="Solvent A">
+             <img src="images/pumpTopYellow.png" id="yellow" class="col s3 m2 pipe" alt="Solvent A">
              <h5 class="b">B</h5>             
-             <img src="images/topred.png" id="red" class="col s3 m2 pipe " alt="Solvent B">
+             <img src="images/pumpTopRed.png" id="red" class="col s3 m2 pipe " alt="Solvent B">
              <h5 class="c">C</h5> 
-             <img src="images/topgreen.png" id="green" class="col s3 m2 pipe " alt="Solvent C">
+             <img src="images/pumpTopGreen.png" id="green" class="col s3 m2 pipe " alt="Solvent C">
              <h5 class="d">D</h5>
-             <img src="images/topblue.png" id="blue" class="col s3 m2 pipe " alt="Solvent D">    
+             <img src="images/pumpTopBlue.png" id="blue" class="col s3 m2 pipe " alt="Solvent D">    
                  
             </div>
             <div id="middle" class="container  ">
@@ -40,7 +40,7 @@
                 <h5 class="p5">5</h5><img src="images/pipe.png" class="col s1 m1 outlet5 opipe" alt="outlet">
                 <h5 class="p6">6</h5><img src="images/pipe.png" class="col s1 m1 outlet6 opipe" alt="outlet">
                 <h5 class="p7">7</h5><img src="images/pipe.png" class="col s1 m1 outlet7 opipe" alt="outlet">
-                <h5 class="p8">8</h5> <img src="images/pipe.png" class="col s1 m1outlet8 opipe" alt="outlet">                
+                <h5 class="p8">8</h5> <img src="images/pipe.png" class="col s1 m1 outlet8 opipe" alt="outlet">                
             </div>
         </div>
 
@@ -62,7 +62,7 @@
             </div>  -->
             <!-- Multiple select dropdown for outlet -->
             <div class="input-field col s7">
-                <select id="outletA">
+                <select id="outletA" onchange="changeA()">
                   <option value="" disabled selected>Outlet</option>
                   <option value="1">Outlet 1</option>
                   <option value="2">Outlet 2</option>
@@ -75,14 +75,14 @@
                 </select>
                 <label>Solvent A</label>
               </div>
-              <input type="number" class="col s2" id="secondsA" placeholder="Seconds">
-              <div class="col s2 counterA">0</div>
+              <input type="number" class="col s1" id="secondsA" placeholder="Qty">
+              <div class="col s1 counterA">0</div>
               <button class="btn col s2 grey btnA" id="btnA">Run</button>
               <button class="btn col s2  red stop" id="stopA">Stop</button>
               
               
               <div class="input-field col s7 ">
-                <select id="outletB">
+                <select id="outletB" onchange="changeB()">
                   <option value="" disabled selected>Outlet</option>
                   <option value="1">Outlet 1</option>
                   <option value="2">Outlet 2</option>
@@ -95,13 +95,13 @@
                 </select>
                 <label>Solvent B</label>
               </div>              
-              <input type="number" class="col s2" id="secondsB" placeholder="Seconds">
-              <div class="col s2 counterB">0</div>
+              <input type="number" class="col s1" id="secondsB" placeholder="Qty">
+              <div class="col s1 counterB">0</div>
               <button class="btn col s2 grey btnB" id="btnB">Run</button>
               <button class="btn col s2 red stop" id="stopB">Stop</button>
               
               <div class="input-field col s7">
-                <select id="outletC">
+                <select id="outletC" onchange="changeC()">
                   <option value="" disabled selected>Outlet</option>
                   <option value="1">Outlet 1</option>
                   <option value="2">Outlet 2</option>
@@ -114,13 +114,13 @@
                 </select>
                 <label>Solvent C</label>
               </div> 
-              <input type="number" class="col s2" id="secondsC" placeholder="Seconds">
-              <div class="col s2 counterC">0</div>
+              <input type="number" class="col s1" id="secondsC" placeholder="Qty">
+              <div class="col s1 counterC">0</div>
               <button class="btn col s2  grey btnC" id="btnC">Run</button>
               <button class="btn col s2  red  stop" id="stopC">Stop</button>
 
               <div class="input-field col s7">
-                <select id="outletD">
+                <select id="outletD" onchange="changeD()">
                   <option value="" disabled selected>Outlet</option>
                   <option value="1">Outlet 1</option>
                   <option value="2">Outlet 2</option>
@@ -133,8 +133,8 @@
                 </select>
                 <label>Solvent D</label>
               </div>              
-              <input type="number" class="col s2" id="secondsD" placeholder="Seconds"> 
-              <div class="col s2 counterD">0</div>
+              <input type="number" class="col s1" id="secondsD" placeholder="Qty"> 
+              <div class="col s1 counterD">0</div>
               <button class="btn col s2 grey btnD" id="btnD">Run</button>
               <button class="btn col s2 red stop" id="stopD">Stop</button> 
               
